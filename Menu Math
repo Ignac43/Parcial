@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    double suma=0,resta=0,multiplicacion=0,division=0,a,b;
+    int opcion;
+    
+    cout<<"***************MENU**********"<<endl;
+    cout<<"\n 1. Suma"<<endl;
+    cout<<"2. Resta"<<endl;
+    cout<<"3. multiplicacion"<<endl;
+    cout<<"4. division"<<endl;
+    cout<<"0. Salir"<<endl;
+    
+    do {
+        cout<<"\n Ingrese a:";
+        cin>>a;
+        cout<<"Ingrese b";
+        cin>>b;
+        
+        cout<<"\n Ingrese una opcion";
+        cin>>opcion;
+        switch (opcion) {
+            case 1:
+                suma=a+b;
+                cout<<"El resultado es: "<<suma;
+                break;
+            case 2:
+                resta=a-b;
+                cout<<"El resultado es: "<<resta;
+                break;
+            case 3:
+                multiplicacion=a*b;
+                cout<<"El resultado es: "<<multiplicacion;
+                break;
+            case 4:
+                division=a/b;
+                cout<<"El resultado es: "<<division;
+                break;
+            case 0: 
+                cout<<"Se sale del programa"<<endl;
+                break;
+            default: 
+                cout<<"Error"<<endl;
+                break;
+        }
+        
+    } while (opcion !=0);
+   
+   return 0;
+    
+}
